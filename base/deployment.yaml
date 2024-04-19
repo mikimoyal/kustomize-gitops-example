@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: the-deployment
+ name: KustomizeExample
+ namespace: KustomizeExample
  labels:
    deployment: demo
 spec:
@@ -12,7 +13,7 @@ spec:
         deployment: demo
     spec:
       containers:
-      - name: the-container
+      - name: app-container
         image: hseligson/kustomize-sample-app:v1.0.1
         ports:
         - containerPort: 8080
