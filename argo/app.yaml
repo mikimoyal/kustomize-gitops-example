@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: KustomizeExample
+  name: kustomize-example
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: KustomizeExample
+    namespace: kustomize-example
     server: https://kubernetes.default.svc
   project: default
   source:

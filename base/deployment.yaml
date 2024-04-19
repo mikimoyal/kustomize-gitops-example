@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: KustomizeExample
- namespace: KustomizeExample
+ name: kustomize-example
+ namespace: kustomize-example
  labels:
    deployment: demo
 spec:
