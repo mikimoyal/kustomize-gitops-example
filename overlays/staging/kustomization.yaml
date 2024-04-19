@@ -1,7 +1,11 @@
 namePrefix: staging-
-commonLabels:
-  variant: staging
-bases:
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
 - ../../base
-patchesStrategicMerge:
-- config-map.yaml
+labels:
+- includeSelectors: true
+  pairs:
+    variant: staging
+patches:
+- path: config-map.yaml
