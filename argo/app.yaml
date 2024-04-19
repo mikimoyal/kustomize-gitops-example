@@ -11,7 +11,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: argo
+    path: overlays/staging
     repoURL: https://github.com/hseligson1/kustomize-gitops-example.git
     targetRevision: main
   syncPolicy:
