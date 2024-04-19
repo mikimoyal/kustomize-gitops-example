@@ -9,8 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    directory:
-      recurse: true
     path: overlays/staging
     repoURL: https://github.com/mikimoyal/kustomize-gitops-example.git
     targetRevision: main
